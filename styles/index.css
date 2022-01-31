@@ -3,3 +3,20 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+body {
+  background-color: #1c1e1d;
+}
+
+.footer-background {
+  background-image: url("../public/favicon/footer.jpg");
+  background-size: cover;
+}
+
+.alert {
+  background-color: #1c1e1d;
+}
+
+.home-wrapper {
+  padding: 20px;
+}

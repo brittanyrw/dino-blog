@@ -16,8 +16,9 @@ export default function Index({ preview, allPosts }) {
         <Head>
           <title>Next.js Blog Example with {CMS_NAME}</title>
         </Head>
+        <Intro />
         <Container>
-          <Intro />
+          <section className="home-wrapper bg-white">
           {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -29,6 +30,7 @@ export default function Index({ preview, allPosts }) {
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          </section>
         </Container>
       </Layout>
     </>
